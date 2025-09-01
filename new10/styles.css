@@ -1,0 +1,343 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.black-hole-effect {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulseEffect 8s infinite ease-in-out;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: url('https://drive.google.com/uc?export=view&id=17cMRT8C3C7KKMgrtmIfZn8qzPxTqXMWd') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* разрешаем перенос строк */
+    gap: 12px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav a:hover {
+    color: #00bcd4;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.section {
+    padding: 30px 0;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.content {
+    max-width: 100%;
+    padding: 15px;
+}
+
+.mission-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mission-highlight {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(0, 188, 212, 0.2) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00bcd4;
+}
+
+.mission-text {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.mission-vision {
+    font-style: italic;
+    font-size: 1em;
+    color: #34495e;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.7);
+    border-left: 5px solid #2196f3;
+    font-weight: 500;
+}
+
+.experience-item {
+    margin: 15px 0;
+    padding: 20px;
+    background: linear-gradient(90deg, #00bcd4, #2196f3);
+    border-left: 5px solid #00bcd4;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.experience-item:hover {
+    transform: translateX(10px);
+}
+
+.experience-item.expanded .details {
+    max-height: 500px;
+    opacity: 1;
+    padding: 15px;
+}
+
+.details {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: #f8f9fa;
+    color: #333;
+    margin-top: 15px;
+    border-radius: 8px;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    font-size: 0.95em;
+}
+
+.short-desc {
+    font-size: 1em;
+}
+
+/* ====== Skill Set ====== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* умеренное расстояние */
+    padding: 30px 0;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 20px 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    font-size: 1.4em;   /* чуть больше базового */
+    font-weight: 600;
+    color: #2c3e50;
+    min-height: 80px;   /* фиксированная высота для выравнивания */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-item i {
+    color: #2196f3;
+    font-size: 1.6em;
+    flex-shrink: 0; /* иконка не сжимается */
+}
+
+.skill-item:hover {
+    transform: translateY(-4px);
+    background: rgba(33, 150, 243, 0.25);
+}
+
+/* ====== Конец Skill Set ====== */
+
+#contact .content p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.telegram-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0088cc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.telegram-icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.download-section {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #00bcd4, #2196f3);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #2196f3, #00bcd4);
+}
+
+/* Анимации */
+@keyframes pulseEffect {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.2em; }
+    .section-title { font-size: 2em; }
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .nav a {
+        padding: 8px 12px;
+        min-width: unset;
+        font-size: 1em;
+    }
+    .experience-item { padding: 15px; font-size: 0.95em; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .skill-item { 
+        font-size: 1.8em; 
+        padding: 28px 40px;
+    }
+    .skill-item i { font-size: 2.2em; }
+    .mission-text { font-size: 1em; }
+    .mission-vision { font-size: 0.9em; }
+    .details { font-size: 0.9em; }
+    .download-btn { font-size: 1em; padding: 10px 20px; }
+}
+
+@media (max-width: 480px) {
+    header { padding: 15px 0; height: 180px; }
+    header h1 { font-size: 1.8em; }
+    .tagline { font-size: 1em; }
+    .nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 8px 0;
+    }
+    .nav a {
+        font-size: 0.9em;
+        padding: 6px 10px;
+        min-width: unset;
+    }
+    .section { padding: 15px 0; margin: 10px 0; }
+    .section-title { font-size: 1.5em; }
+    .experience-item { padding: 10px; font-size: 0.9em; }
+    .short-desc { font-size: 0.9em; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .skill-item { 
+        font-size: 1.4em; 
+        padding: 22px 30px;
+    }
+    .skill-item i { font-size: 1.8em; }
+    .telegram-icon { width: 18px; height: 18px; }
+    #contact .content p { font-size: 1em; }
+    .details { font-size: 0.85em; }
+    .download-btn { font-size: 0.9em; padding: 8px 15px; }
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1000px; }
+}
