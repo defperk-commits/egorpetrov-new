@@ -3,154 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Егор Петров - Visionary Product Owner</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
-    <!-- Добавлено для иконок в Skill Set -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Егор Петров - Senior Product Owner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <div class="black-hole-effect"></div>
+    <div class="particles-background"></div>
+
     <header>
-        <div class="container">
+        <div class="header-content">
             <h1>Егор Петров</h1>
-            <p class="tagline">Visionary Product Owner</p>
-            <div class="nav">
-                <a href="#about">О себе</a>
+            <div class="tagline">Senior Product Owner</div>
+            <div class="header-description">Превращаю сложные идеи в прибыльные IT-продукты</div>
+            <nav class="nav">
+                <a href="#profile">Обо мне</a>
                 <a href="#experience">Опыт</a>
-                <a href="#skills">Навыки</a>
-                <a href="#contact">Связь</a>
-            </div>
+                <a href="#skills">Компетенции</a>
+                <a href="#contact">Контакты</a>
+            </nav>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Мой Месседж</h2>
-            <div class="content mission-content">
-                <div class="mission-highlight">
-                    <p class="mission-text">Я — Product Owner с более чем 9 годами опыта в создании и выводе IT-продуктов на рынок.</p>
-                    <p class="mission-text">Управлял запуском 6 инновационных решений — от B2B до B2C платформ, доказав способность превращать идеи в прибыльные бизнесы.</p>
-                    <p class="mission-text">Моя сила — в построении команд, разработке продуктов с нуля и внедрении передовых подходов для достижения целей.</p>
+    <main class="container">
+        <section id="profile" class="section">
+            <h2 class="section-title">Профессиональный профиль</h2>
+            <div class="profile-card">
+                <div class="profile-content">
+                    <p>Product Owner с более чем 9-летним опытом создания и вывода на рынок высоконагруженных IT-продуктов. Специализируюсь на FinTech, eCommerce и HoReCa решениях.</p>
+                    <div class="expertise-list">
+                        <div class="expertise-item"><i class="fas fa-rocket"></i> Запуск продуктов с нуля</div>
+                        <div class="expertise-item"><i class="fas fa-chart-line"></i> Монетизация и юнит-экономика</div>
+                        <div class="expertise-item"><i class="fas fa-users"></i> Построение кросс-функциональных команд</div>
+                    </div>
+                    <p class="mission-statement">Создаю продукты, которые решают реальные бизнес-задачи и приносят измеримую ценность.</p>
                 </div>
-                <p class="mission-vision">Настроен на партнёрство с лидерами отрасли, чтобы направить свой опыт в созидании, экономике продукта и командном лидерстве на новые высоты.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Мой путь</h2>
-            <div class="content">
-                <div class="experience-item" data-expanded="false">
-                    <h3>Rocket Work — Product Owner</h3>
-                    <p>Февраль 2025 — настоящее время (7 месяцев)</p>
-                    <p class="short-desc">Запуск Rocket Касса: эквайринг, СБП, SoftPOS. Разработал стратегию, вывел продукт на рынок, достиг безубыточности.</p>
-                    <div class="details">
-                        <p>Вывод продукта Rocket Касса с нуля на рынок. Электронная касса, поддерживающая банковский эквайринг, СБП, SoftPOS. Касса для юр. лиц и физ. лиц, предлагает быстрый путь подключения к кабинету ТСП и Кассы, без подписания с банком. Доступ к осуществлению продаж в течение часа после подачи заявки. Обеспечивает соблюдение ФЗ 54, сплитование клиентского платежа по мастерам, формирование ОФД, мгновенное списание налога и его отправку.</p>
-                        <p>Исследовательские задачи: Провёл этап Discovery, сформировал гипотезы и видение, подтвердил гипотезы, приоритизировал функциональность, разработал дорожную карту, спроектировал UX и описал задачи на уровне БА.</p>
-                        <p>Процессные задачи: Запустил 2-недельные спринты по Scrum-подходу, очертил и поддерживал вехи развития продукта.</p>
+        <section id="experience" class="section">
+            <h2 class="section-title">Ключевые проекты</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Февраль 2025 — настоящее время</div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3>Rocket Work · Product Owner</h3>
+                            <button class="expand-btn" data-target="rocket-details"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="project-name">Rocket Касса · FinTech B2B2C решение</div>
+                        <ul>
+                            <li>Вывод с нуля на рынок электронной кассы с эквайрингом, СБП и SoftPOS</li>
+                            <li>Обеспечение compliance с ФЗ-54</li>
+                            <li>Достижение безубыточности в течение 6 месяцев</li>
+                        </ul>
+                        <div class="experience-details" id="rocket-details">
+                            <div class="details-content">
+                                <p>Вывод продукта Rocket Касса на рынок как B2B2C решение в FinTech. Электронная касса поддерживает банковский эквайринг, СБП и SoftPOS, предоставляя быстрый путь подключения для юр. и физ. лиц без необходимости подписания договора с банком. Доступ к продажам возможен в течение часа после подачи заявки.</p>
+                                <p>Касса обеспечивает соблюдение ФЗ-54, сплитование клиентских платежей, формирование ОФД, мгновенное списание и отправку налогов.</p>
+                                <h4>Ключевые достижения:</h4>
+                                <ul>
+                                    <li>Проведение этапа Discovery и формирование гипотез</li>
+                                    <li>Разработка дорожной карты и UX-проектирование</li>
+                                    <li>Запуск 2-недельных спринтов по Scrum</li>
+                                    <li>Достижение безубыточности продукта</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="experience-item" data-expanded="false">
-                    <h3>iiko — Product Owner</h3>
-                    <p>Март 2023 — Январь 2025 (1 год 11 месяцев)</p>
-                    <p class="short-desc">Создал Digital Hub для HoReCa, увеличил выручку клиентов на 50%. Интеграции с VK, полный цикл от MVP до релиза.</p>
-                    <div class="details">
-                        <p>Разработка продукта Digital Hub (b2b2c) для HoReCa/eCom: программа лояльности, конструктор акций, клиентская база, монетизация, нотификации, аналитика, интеграции (включая ВКонтакте).</p>
-                        <p>Цель: Увеличение выручки клиентов компании на 50% за счёт единого окна управления маркетингом. Запустил с нуля, провел MVP, пилот и релиз крупного интеграционного продукта.</p>
-                        <p>Задачи: Исследования, CustDev, гипотезы, roadmap, экономика окупаемости. Управление командами (разработка, маркетинг, дизайн, аналитика). Юзер-сторис, приоритизация бэклога, A/B-тесты, метрики (профит, возвратность, лояльность).</p>
-                    </div>
-                </div>
-                <div class="experience-item" data-expanded="false">
-                    <h3>Газпром нефть — Product Manager</h3>
-                    <p>Июль 2022 — Декабрь 2022 (6 месяцев)</p>
-                    <p class="short-desc">Вывод двух MVP: Sea Logic и Container Logic — агрегаторы морских перевозок и контейнеров.</p>
-                    <div class="details">
-                        <p>Вывод 2 MVP: Sea Logic (агрегатор морских перевозок) и Container Logic (поиск контейнеров). Исследования, гипотезы, roadmap, прототипы, управление командами. <a href="https://sea-logic.ru">sea-logic.ru</a>, <a href="https://www.containerlogic.ru">containerlogic.ru</a>.</p>
-                    </div>
-                </div>
-                <div class="experience-item" data-expanded="false">
-                    <h3>Максимум, Автомобильный холдинг — Product Owner</h3>
-                    <p>Июнь 2021 — Май 2022 (1 год)</p>
-                    <p class="short-desc">Омниканальная платформа СМЦ. Запуск MVP: онлайн-запись, кабинеты.</p>
-                    <div class="details">
-                        <p>Омниканальная платформа СМЦ. Запуск MVP: онлайн-запись, кабинеты. Scrum, анализ, CustDev, управление командой, метрики, экономика. <a href="https://dev.maximum.auto/services">dev.maximum.auto</a>.</p>
-                    </div>
-                </div>
-                <div class="experience-item" data-expanded="false">
-                    <h3>Tockl.it — Product Manager/Product Owner</h3>
-                    <p>Май 2018 — Май 2021 (3 года 1 месяц)</p>
-                    <p class="short-desc">Smart Wallet для HoReCa. Интеграция Wallet, ботов, CRM. Запуск в 4 городах, +15% выручки.</p>
-                    <div class="details">
-                        <p>Smart Wallet для HoReCa — интеграция Wallet-карт, ботов (Telegram, WhatsApp), CRM. Цель: автоматизация коммуникации с гостями, сегментация базы, привлечение повторных визитов.</p>
-                        <p>Обязанности: Исследование аудитории/рынка HoReCa, ключевые боли, CustDev, гипотезы, roadmap, экономика окупаемости. Управление командами (разработка 4 чел., маркетинг 3 чел., дизайн 1, аналитика 1). Юзер-сторис, приоритизация бэклога, A/B-тесты, метрики (профит, возвратность, лояльность).</p>
-                        <p>Результат: Запуск в 4 городах, +15% выручки, оцифровка базы (более 4000 в крупном), удержание возврата на 2 визит 50–70%. Кейс: <a href="https://drive.google.com/drive/folders/1uc1LcEOEPsysjQKNZvq13sEsU19ZvXSG?usp=sharing">Google Drive</a>.</p>
-                    </div>
-                </div>
-                <div class="experience-item" data-expanded="false">
-                    <h3>СПбНИУ ИТМО — Организация Marketorium</h3>
-                    <p>Январь 2016 — Июнь 2018 (2 года 6 месяцев)</p>
-                    <p class="short-desc">Организация международного конкурса по маркетингу Marketorium Big Game.</p>
-                    <div class="details">
-                        <p>Организация международного конкурса по маркетингу Marketorium Big Game.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skill Set</h2>
-            <div class="content skills-grid">
-                <div class="skill-item"><i class="fas fa-credit-card"></i> Банковский эквайринг</div>
-                <div class="skill-item"><i class="fas fa-coins"></i> ФинТех</div>
-                <div class="skill-item"><i class="fas fa-mobile-alt"></i> SoftPOS</div>
-                <div class="skill-item"><i class="fas fa-store"></i> eCOM</div>
-                <div class="skill-item"><i class="fas fa-chess"></i> Стратегическое мышление</div>
-                <div class="skill-item"><i class="fas fa-tasks"></i> Управление продуктом</div>
-                <div class="skill-item"><i class="fas fa-sitemap"></i> Scrum & Kanban</div>
-                <div class="skill-item"><i class="fas fa-chart-line"></i> Аналитика и метрики</div>
-                <div class="skill-item"><i class="fas fa-bullhorn"></i> Маркетинговая стратегия</div>
-                <div class="skill-item"><i class="fas fa-users"></i> Командное лидерство</div>
-                <div class="skill-item"><i class="fas fa-user-check"></i> Customer Development (CustDev)</div>
-                <div class="skill-item"><i class="fas fa-road"></i> Roadmap планирование</div>
-                <div class="skill-item"><i class="fas fa-drafting-compass"></i> Прототипирование</div>
-                <div class="skill-item"><i class="fas fa-balance-scale"></i> Экономика продукта</div>
-                <div class="skill-item"><i class="fas fa-search"></i> Исследования и гипотезы</div>
-                <div class="skill-item"><i class="fas fa-people-carry"></i> Управление командами</div>
-                <div class="skill-item"><i class="fas fa-plug"></i> Интеграции (VK, CRM, Wallet)</div>
-            </div>
-        </div>
-    </section>
+                <div class="timeline-item">
+                    <div class="timeline-date">Март 2023 — Январь 2025</div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3>iiko · Product Owner</h3>
+                            <button class="expand-btn" data-target="iiko-details"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="project-name">Digital Hub · Маркетинговая платформа для HoReCa</div>
+                        <ul>
+                            <li>Увеличение выручки клиентов на 50% через единое окно управления</li>
+                            <li>Интеграция с VK Notify и VK ID</li>
+                            <li>Запуск комплексного интеграционного решения</li>
+                        </ul>
+                        <div class="experience-details" id="iiko-details">
+                            <div class="details-content">
+                                <p>Разработка продукта Digital Hub (B2B2C) для HoReCa и eCommerce: программа лояльности, конструктор акций, клиентская база, монетизация, нотификации, аналитика и интеграции (включая ВКонтакте).</p>
+                                <h4>Ключевые достижения:</h4>
+                                <ul>
+                                    <i class="fas fa-check"></i> Увеличение выручки клиентов компании на 50%
+                                    <li>Запуск продукта с нуля на новом технологическом стеке</li>
+                                    <li>Интеграция iiko с VK Notify и VK ID</li>
+                                    <li>Управление кросс-функциональными командами</li>
+                                    <li>Проведение Customer Development и валидация гипотез</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="resume-download" class="section">
-        <div class="container">
-            <div class="content download-section">
-                <a href="Петров Егор Васильевич-3.pdf" class="download-btn" download="Egor_Petrov_Resume.pdf">Скачать резюме (PDF)</a>
-            </div>
-        </div>
-    </section>
+                <div class="timeline-item">
+                    <div class="timeline-date">Июль 2022 — Декабрь 2022</div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3>Газпром нефть · Product Manager</h3>
+                            <button class="expand-btn" data-target="gazprom-details"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="project-name">Sea Logic & Container Logic · Логистические платформы</div>
+                        <ul>
+                            <li>Запуск двух MVP: агрегатор морских перевозок и поиск контейнеров</li>
+                            <li>Построение продуктовой стратегии и дорожных карт</li>
+                        </ul>
+                        <div class="experience-details" id="gazprom-details">
+                            <div class="details-content">
+                                <p>Вывод двух MVP: Sea Logic (агрегатор морских перевозок) и Container Logic (поиск контейнеров). Проекты: <a href="https://sea-logic.ru" class="project-link">sea-logic.ru</a>, <a href="https://containerlogic.ru" class="project-link">containerlogic.ru</a>.</p>
+                                <h4>Ключевые достижения:</h4>
+                                <ul>
+                                    <li>Проведение исследований рынка и аудитории</li>
+                                    <li>Формирование и тестирование гипотез</li>
+                                    <li>Создание дорожной карты и продуктового бэклога</li>
+                                    <li>Прототипирование и управление командами разработки</li>
+                                    <li>Подготовка и защита продукта на инвестиционных комитетах</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Связь</h2>
-            <div class="content">
-                <p>Готов к коммуникации. Свяжитесь: +7 (929) 273-54-55 | evpetrovspb@gmail.com | <a href="https://t.me/epetrov" class="telegram-link">Написать в Telegram <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram" class="telegram-icon"></a></p>
-                <p>Санкт-Петербург, Россия.</p>
+                <div class="timeline-item">
+                    <div class="timeline-date">2021-2022</div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3>Максимум Авто · Product Owner</h3>
+                            <button class="expand-btn" data-target="maximum-details"><i class="fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="project-name">Омниканальная платформа СМЦ</div>
+                        <ul>
+                            <li>Разработка MVP с онлайн-записью и личными кабинетами</li>
+                            <li>Внедрение Scrum в кросс-функциональную команду</li>
+                        </ul>
+                        <div class="experience-details" id="maximum-details">
+                            <div class="details-content">
+                                <p>Омниканальная платформа СМЦ - веб-продукт для удобной коммуникации бизнеса с клиентами. Функционал: онлайн-запись на сервисное обслуживание, личные кабинеты клиента и сотрудника. Стек: React.js, Node.js, PostgreSQL.</p>
+                                <h4>Ключевые достижения:</h4>
+                                <ul>
+                                    <li>Запуск продукта с нуля</li>
+                                    <li>Анализ рынка, конкурентов и целевой аудитории</li>
+                                    <li>Проработка архитектурных и технических решений</li>
+                                    <li>Построение и актуализация RoadMap</li>
+                                    <li>Организация и проведение Customer Development (3 этапа по 20 респондентов)</li>
+                                    <li>Управление внутренней и внешней командами</li>
+                                    <li>MVP: <a href="https://dev.maximum.auto/services" class="project-link">dev.maximum.auto/services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Профессиональные компетенции</h2>
+            <button id="skillsToggle" class="skills-toggle"><span>Показать компетенции</span> <i class="fas fa-chevron-down"></i></button>
+            <div id="skillsGrid" class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-lightbulb"></i> Продуктовый менеджмент</h3>
+                    <div class="skill-items">
+                        <span>Product Strategy</span>
+                        <span>Roadmapping</span>
+                        <span>Unit Economics</span>
+                        <span>Prioritization</span>
+                        <span>Hypothesis Testing</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-users-cog"></i> Управление</h3>
+                    <div class="skill-items">
+                        <span>Scrum/Kanban</span>
+                        <span>Team Leadership</span>
+                        <span>Stakeholder Management</span>
+                        <span>Agile Methodology</span>
+                        <span>Cross-functional Teams</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Аналитика</h3>
+                    <div class="skill-items">
+                        <span>Metrics & Analytics</span>
+                        <span>Market Research</</span>
+                        <span>Customer Development</span>
+                        <span>A/B Testing</span>
+                        <span>Data-driven Decisions</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-briefcase"></i> Отраслевой опыт</h3>
+                    <div class="skill-items">
+                        <span>FinTech</span>
+                        <span>eCommerce</span>
+                        <span>HoReCa</span>
+                        <span>Banking</span>
+                        <span>Logistics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2 class="section-title">Достижения</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-number">6+</div>
+                    <div class="achievement-text">успешных продуктовых запусков</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">50%</div>
+                    <div class="achievement-text">рост выручки клиентов</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">15%</div>
+                    <div class="achievement-text">среднее увеличение эффективности</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">9+</div>
+                    <div class="achievement-text">лет в продуктовой разработке</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-header">
+                <p class="contact-invitation">Готов к обсуждению ваших проектов и новых возможностей</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <a href="tel:+79292735455" class="contact-link">+7 (929) 273-54-55</a>
+                            <p class="contact-description">Предпочтительный способ связи</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:defperk74@gmail.com" class="contact-link">defperk74@gmail.com</a>
+                            <p class="contact-description">Для деловой переписки</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+                        <div class="contact-details">
+                            <h4>Telegram</h4>
+                            <a href="https://t.me/epetrov" class="contact-link">@epetrov</a>
+                            <p class="contact-description">Быстрая коммуникация</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/evpetrov74" class="contact-link">/in/evpetrov74</a>
+                            <p class="contact-description">Профессиональный профиль</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-info">
+                <div class="location-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Санкт-Петербург, Россия
+                </div>
+                <p class="availability">Доступен для новых проектов · Открыт к предложениям</p>
+            </div>
+            <div class="download-container">
+                <p class="download-text">Хотите узнать больше? Скачайте полное резюме</p>
+                <a href="Петров Егор Васильевич-3.pdf" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                    Скачать резюме (PDF)
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>© 2025 Егор Петров. Продуктовый подход начинается здесь.</p>
-        </div>
+        <p>© 2025 Егор Петров · Senior Product Owner</p>
+        <p>Готов к обсуждению ваших проектов</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
